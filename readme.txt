@@ -3,8 +3,8 @@ Contributors: george_michael
 Donate link: 
 Tags: 
 Requires at least: 3.5.2
-Tested up to: 3.9.1
-Stable tag: 1.0.0
+Tested up to: 4.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,7 +32,13 @@ Probably! Honestly, I don't know as I haven't tried, but I'd be surprised if it 
 
 == Changelog ==
 
+= 1.0.1 =
+* Fixed subscribe/unsubscribe bug to work with WP 4.0
+
 = 1.0.0 =
 * Initial version.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+* If you are running WP 4.0, you will need to upgrade.
