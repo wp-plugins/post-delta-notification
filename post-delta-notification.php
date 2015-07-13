@@ -1,14 +1,14 @@
 <?php
 /**
  * @package Post-Delta-Notification
- * @version 1.0.1
+ * @version 1.0.2
  */
 /*
 Plugin Name: Post Delta Notification
 Plugin URI: http://wordpress.org/plugins/post-delta-notification
 Description: Allows users to receive an email if a post is updated.
 Author: Michael George
-Version: 1.0.1
+Version: 1.0.2
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -160,7 +160,7 @@ if ( ! class_exists( "PostDeltaNotification" ) ) {
             $message .= "<p><a href='" . get_permalink( $newPost->ID ) . "' target=_blank>" . apply_filters( 'the_title', $newPost->post_title ) . "</a></p>\r";
             $message .=  "<p>On this page, you can unsubscribe from future email updates.</p>\r";
             $addresses = get_post_meta( $newPost->ID, 'PDN_subscribers', true );
-            $addresses = array_unique( $addresses );
+            $addresses = @array_unique( $addresses );
             //Only send emails if subscribers exist
             if ( count( $addresses ) >= 1 ) {
                 add_filter( 'wp_mail_content_type', array( $this, 'set_html_content_type' ) );
