@@ -3,8 +3,8 @@ Contributors: george_michael
 Donate link: 
 Tags: 
 Requires at least: 3.5.2
-Tested up to: 4.2.2
-Stable tag: 1.0.2
+Tested up to: 4.3.0
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,9 @@ Probably! Honestly, I don't know as I haven't tried, but I'd be surprised if it 
 
 == Changelog ==
 
+= 1.0.3 =
+* Removed PHP4 constructor from class as WP 4.3 deprecated that type of constructor.
+
 = 1.0.2 =
 * Fixed an error that would show up in logs.
 
@@ -42,6 +45,9 @@ Probably! Honestly, I don't know as I haven't tried, but I'd be surprised if it 
 * Initial version.
 
 == Upgrade Notice ==
+
+= 1.0.3 =
+* Required upgrade if using WP 4.3.
 
 = 1.0.2 =
 * Bug fix. Upgrade recommended.

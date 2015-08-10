@@ -1,14 +1,14 @@
 <?php
 /**
  * @package Post-Delta-Notification
- * @version 1.0.2
+ * @version 1.0.3
  */
 /*
 Plugin Name: Post Delta Notification
 Plugin URI: http://wordpress.org/plugins/post-delta-notification
 Description: Allows users to receive an email if a post is updated.
 Author: Michael George
-Version: 1.0.2
+Version: 1.0.3
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -31,10 +31,6 @@ if ( ! class_exists( "PostDeltaNotification" ) ) {
 
         function __construct() {
             $this->pdn_getAdminOptions();
-        }
-        //For backwards PHP functionality
-        function PostDeltaNotification() {
-            $this->__construct();
         }
 
         //Returns an array of admin options
